@@ -1,7 +1,7 @@
 #!/usr/bin/env python2
 # -*- coding: latin-1 -*-
 """
-    Graphs Shortest Paths  
+    Graphs Paths algorithms  
 """
 import sys
 from Queue import PriorityQueue
