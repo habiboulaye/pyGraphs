@@ -2,7 +2,7 @@
 # -*- coding: latin-1 -*-
 """
     Graphs Representation
-    - Matrix or List
+    - Matrix (dense) or List (sparse)
     Graphs Search algorithms
     - Depth First Search
     - Breadth First Search
@@ -11,6 +11,9 @@ from Queue import LifoQueue, Queue
 
 #     Graphs Representation
 class cGraph:
+    """
+        Graphs (Matrix) Representation
+    """
     def __init__(self, nCount):
         self.VertexList=range(nCount)
         self.Edges={}
@@ -40,9 +43,11 @@ class cGraph:
         print (self.Edges)
         print (self.Visited)
         
-#     Graphs Search
-
+#     Graphs Search algorithms
 def recursiveDFS(Graph, vroot):
+    """
+        Depth First Search: recursive version
+    """
     iV=vroot
     print ("Visit :", iV)
     Graph.setVisited(iV)
@@ -51,6 +56,9 @@ def recursiveDFS(Graph, vroot):
             recursiveDFS(Graph, jV)
 
 def stackDFS(Graph, vroot):
+    """
+        Depth First Search: stack version
+    """
     Stack=LifoQueue()
     Stack.put(vroot)
     while not Stack.empty():
@@ -62,6 +70,9 @@ def stackDFS(Graph, vroot):
                 Stack.put(jV)
 
 def BFS(Graph, vroot):
+    """
+        Breadth First Search
+    """
     FIFO=Queue()
     FIFO.put(vroot)
     while not FIFO.empty():
@@ -71,3 +82,4 @@ def BFS(Graph, vroot):
         for jV in Graph.VertexList:
             if Graph.Edges[iV,jV] and not Graph.Visited[jV]:
                 FIFO.put(jV)
+
