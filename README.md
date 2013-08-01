@@ -1,4 +1,4 @@
 pyGraphs
 ========
 
-Codes of basic graphs algorithms
+Python codes of basic graphs algorithms
