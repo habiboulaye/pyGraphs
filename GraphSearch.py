@@ -6,6 +6,8 @@
     Graphs Search algorithms
     - Depth First Search
     - Breadth First Search
+    @author: Habib
+    @contact: Habiboulaye@gmail.com
 """
 from Queue import LifoQueue, Queue
 
