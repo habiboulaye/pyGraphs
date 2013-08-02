@@ -1,7 +1,12 @@
 #!/usr/bin/env python2
 # -*- coding: latin-1 -*-
 """
-    Graphs Paths algorithms  
+    Graphs Paths algorithms
+    - Prim's: Minimum Spanning Tree
+    - Dijkstra: Shortest-path algorithm
+    - FloydWarshall: All-shortest-paths algorithm
+    @author: Habib
+    @contact: Habiboulaye@gmail.com
 """
 import sys
 from Queue import PriorityQueue
